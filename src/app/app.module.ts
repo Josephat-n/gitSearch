@@ -11,8 +11,7 @@ import { GitSearchService } from './git-search.service';
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    HttpClientModule
+    UserComponent
   ],
   imports: [
     BrowserModule,

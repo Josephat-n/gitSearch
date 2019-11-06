@@ -10,11 +10,21 @@ import { User } from '../user';
 })
 export class UserComponent implements OnInit {
 
-  user: User;
+  // user: User;
+  user: any[];
 
-  constructor(gitSearch: GitSearchService, private http: HttpClientModule) {
-    this.user = gitSearch.getUser();
-   }
+  // constructor(private gitSearch: GitSearchService, private http: HttpClientModule) {
+  //   this.user = gitSearch.getUserInfo();
+  //  }
+
+    constructor(private gitSearch: GitSearchService) {
+      this.gitSearch.getUserInfo();
+      // .subscribe(user => {console.log(user );
+      // });
+
+      this.user = this.user;
+    }
+
 
   ngOnInit() {
   }
