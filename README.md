@@ -1,3 +1,18 @@
+# Project Name: gitSearch
+
+# Name of author
+Josphat Njoroge. <br>
+Email: josphatnjoroge254@gmail.com
+
+# Project Description
+This is a web application that allows a user to search a github user in an input field. The app searches in github for a user whose name has been provided, and if the user is available, 
+the app displays the user's name and profile picture. The website also displays a list of some of the public repositories of the searched github user.
+
+To achieve this, two classes and components are built into the system using the angular ClI. Service component, pipe and a directive are also used in the website.
+
+# Live-link 
+The deployed application is avialable at: https://josephat-n.github.io/gitSearch/
+
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
@@ -25,3 +40,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+### License
+MIT &copy; Josephat Njoroge <br>
+Anyone is free to fork, reuse, upgrade or do whatever partains this program without a prior request for permission.
