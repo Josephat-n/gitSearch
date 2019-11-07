@@ -6,23 +6,24 @@
 <div *ngIf="user">
   <div class = "panel panel-default">
     <div class="uk-panel-heading">
-      {{user.name }} <small>{{user.login}}</small>
+      {{user.username }} <small>({{user.id}})</small>
     </div>
   </div>
   <div class = "panel-body">
     <div class = "row">
-      <div class= "col-sm-3">
+      <div class= "col-sm-5">
         <img src="{{user.avatar_url}}" class= "img-responsive" alt = "profile image">
       </div>
       <div class = "col-sm-5">
-        <ul class = "list-group">
+        <!-- <ul class = "list-group">
           <li class = "list-group-item">  </li>
-        </ul>
+        </!-->
         <div class="panel panel-default">
           <div class="uk-panel-heading">
             <h3 class="panell-title">Repositories</h3>
           </div>
            <div class="panel-body" *ngFor= "let repo of repos">
+            <!-- <div class="panel-body" > -->
             <p class = "clearfix">
               {{repo.name}} <a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a>
             </p>
