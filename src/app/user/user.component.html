@@ -1,8 +1,7 @@
-<form action = "" class ="Search">
-  <div class = "form-group">
-    <input type = "text" class = "form-control" placeholder="Search a github by username" [(ngModel)]= "username" name= "username" (keyup) = "findUser()">
-  </div>
-</form>
+
+<div class = "container-fluid">
+
+
 <div *ngIf="user">
   <div class = "panel panel-default">
     <div class="uk-panel-heading">
@@ -31,5 +30,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 

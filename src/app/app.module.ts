@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 
 import { GitSearchService } from './git-search.service';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
