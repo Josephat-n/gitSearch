@@ -6,7 +6,7 @@
 <div *ngIf="user">
   <div class = "panel panel-default">
     <div class="uk-panel-heading">
-      {{user.username }} <small>({{user.id}})</small>
+      {{user.username }} <small>{{user.login}}</small>
     </div>
   </div>
   <div class = "panel-body">
@@ -19,13 +19,14 @@
           <li class = "list-group-item">  </li>
         </!-->
         <div class="panel panel-default">
-          <div class="uk-panel-heading">
-            <h3 class="panell-title">Repositories</h3>
+          <div class="panel-heading">
+            <h3 class="panel-title">Repositories</h3>
           </div>
-           <div class="panel-body" *ngFor= "let repo of repos">
+           <div class="panel-body" *ngFor = "let repo of repos">
             <!-- <div class="panel-body" > -->
             <p class = "clearfix">
-              {{repo.name}} <a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a>
+              {{repo.name}}
+               <!-- <a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a> -->
             </p>
            </div>
         </div>
