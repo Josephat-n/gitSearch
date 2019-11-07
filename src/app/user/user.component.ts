@@ -12,17 +12,23 @@ export class UserComponent implements OnInit {
 
   // user: User;
   user: any[];
+  username: string;
 
   // constructor(private gitSearch: GitSearchService, private http: HttpClientModule) {
   //   this.user = gitSearch.getUserInfo();
   //  }
 
-    constructor(private gitSearch: GitSearchService) {
-      this.gitSearch.getUserInfo();
+  constructor(private gitSearch: GitSearchService) {
+
+    }
+
+  findUser() {
+    this.gitSearch.updateUser(this.username);
+    this.gitSearch.getUserInfo();
       // .subscribe(user => {console.log(user );
       // });
 
-      this.user = this.user;
+    this.user = this.user;
     }
 
 

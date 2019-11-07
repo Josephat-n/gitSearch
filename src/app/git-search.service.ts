@@ -22,4 +22,8 @@ export class GitSearchService {
     // return this.http.get('https://api.github.com/users/').map(res => res.json());
 
   }
+  updateUser(username: string) {
+    this.username = username;
+  }
+
 }
