@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
     this.emitSearch.emit(this.searchTerm);
 
   }
-  getRepos(){
+  getRepos() {
     this.emitRepo.emit(this.searchTerm);
   }
 

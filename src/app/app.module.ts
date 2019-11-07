@@ -10,12 +10,14 @@ import { UserComponent } from './user/user.component';
 
 import { GitSearchService } from './git-search.service';
 import { FormComponent } from './form/form.component';
+import { FormatDatePipe } from './format-date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     FormComponent,
+    FormatDatePipe,
   ],
   imports: [
     BrowserModule,
