@@ -11,6 +11,7 @@ import { UserComponent } from './user/user.component';
 import { GitSearchService } from './git-search.service';
 import { FormComponent } from './form/form.component';
 import { FormatDatePipe } from './format-date.pipe';
+import { RepoComponent } from './repo/repo.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormatDatePipe } from './format-date.pipe';
     UserComponent,
     FormComponent,
     FormatDatePipe,
+    RepoComponent,
   ],
   imports: [
     BrowserModule,
