@@ -1,11 +1,11 @@
 
 <div class = "container-fluid">
-
-
+  <app-form (emitSearch)="getUserInfo($event)" (emitRepo)="getRepos($event)"></app-form>
 <div *ngIf="user">
   <div class = "panel panel-default">
     <div class="uk-panel-heading">
-      {{user.username }} <small>{{user.login}}</small>
+      <h2>{{user.username }}</h2>
+      <small>{{user.login}}</small>
     </div>
   </div>
   <div class = "panel-body">
@@ -23,7 +23,7 @@
           </div>
            <div class="panel-body" *ngFor = "let repo of repos">
               <p class = "clearfix">
-                {{repo.name}}<a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a>
+                {{repo.name}}<a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-info">View this in github</a>
             </p>
            </div>
         </div>

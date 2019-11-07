@@ -1,1 +1,8 @@
-<p>form works!</p>
+<div style="margin:30px">
+    <form class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control mr-10" id="searchbar" placeholder="Search by name" name="searchTerm" [(ngModel)]="searchTerm">
+        </div>
+        <button type="submit" class="btn btn-info" (click)="search()" (click)="getRepos()">Search</button>
+    </form>
+</div>
