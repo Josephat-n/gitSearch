@@ -23,10 +23,8 @@
             <h3 class="panel-title">Repositories</h3>
           </div>
            <div class="panel-body" *ngFor = "let repo of repos">
-            <!-- <div class="panel-body" > -->
-            <p class = "clearfix">
-              {{repo.name}}
-               <!-- <a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a> -->
+              <p class = "clearfix">
+                {{repo.name}}<a href = "{{repo.html_url}}" target ="_blank"class="btn btn-sm btn-success">View this in github</a>
             </p>
            </div>
         </div>
